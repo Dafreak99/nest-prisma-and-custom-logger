@@ -1,0 +1,62 @@
+GET http://localhost:8080/api/users
+###
+
+GET http://localhost:8080/api/users/1
+###
+
+GET http://localhost:8080/api/users?role=ADMIN
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Dylan",
+  "email": "dylan@gmail.com",
+  "role": "ADMIN"
+}
+###
+
+PATCH http://localhost:8080/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Dylan",
+  "email": "dylan@gmail.com",
+  "role": "admin"
+}
+###
+
+DELETE http://localhost:8080/api/users/1
+###
+
+
+GET http://localhost:8080/api/employees
+###
+
+GET http://localhost:8080/api/employees?role=pasta
+###
+
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "name": "dylan",
+  "email": "dylan@gmail.com",
+  "role": "ADMIN"
+}
+###
+
+GET http://localhost:8080/api/employees/1
+###
+
+PATCH http://localhost:8080/api/employees/2
+Content-Type: application/json
+
+{
+  "email": "angeline2@gmail.com"
+}
+###
+
+DELETE http://localhost:8080/api/employees/3
+###
